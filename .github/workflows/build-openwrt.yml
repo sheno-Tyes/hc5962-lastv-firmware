@@ -58,7 +58,7 @@ jobs:
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt && rm package/lean/luci-app-ssr-plus -rf
         git clone $REPO_URL
-        cd lede && git checkout 16e45c19e635e0d2fa6ac2ce1dd9d8466e0078e2 && cp package/lean/luci-app-ssr-plus ../package/lean/luci-app-ssr-plus -rf
+        cd lede && git checkout 2915c44a11ca0ee40b51ff5d9c18a0da1951e170 && cp package/lean/luci-app-ssr-plus ../package/lean/luci-app-ssr-plus -rf
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
